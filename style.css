@@ -1,0 +1,15 @@
+/* Root variables */
+
+:root {
+    --color-primary: rgb(0, 0, 0);
+    --color-danger: rgb(177, 81, 81);
+    --color-success: rgb(90, 182, 151);
+    --color-dark: rgb(46, 22, 63);
+    --color-white: #fff;
+    --color-info-lights: #7d8da1;
+    --color-light: rgb(124, 197, 219);
+    --card-border-radius: 32px;
+    --border-radius-1: 6.5px;
+    --border-radius-2: 13px;
+    --border-radius-3: 20px;
+}
