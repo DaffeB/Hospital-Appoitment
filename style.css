@@ -3,17 +3,24 @@
 /* Root variables */
 
 :root {
-    --color-primary: rgb(0, 0, 0);
+    --color-primary: rgb(24, 24, 24);
     --color-danger: rgb(177, 81, 81);
     --color-success: rgb(90, 182, 151);
-    --color-dark: rgb(46, 22, 63);
+    --color-warning: rgb(240, 223, 125);
     --color-white: #fff;
-    --color-info-lights: #7d8da1;
+    --color-info-dark: rgb(105, 105, 105);
+    --color-info-lights: #c0c4c9;
+    --color-dark: rgb(34, 22, 43);
     --color-light: rgb(124, 197, 219);
+    --color-primary-variant: rgb(84, 140, 173);
+    --color-dark-variant: rgb(68, 24, 24);
+    --background: black;
     --card-border-radius: 32px;
     --border-radius-1: 6.5px;
     --border-radius-2: 13px;
     --border-radius-3: 20px;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
 }
 
 * {
@@ -25,4 +32,83 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-primary);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    background: var(--background);
+    /* this should be black latter*/
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+a {
+    color: var(--color-info-lights);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.text-muted {
+    color: var(--color-danger);
+}
+
+p {
+    color: var(--color-white);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+aside {
+    height: 100vh;
+    background: rgba(33, 33, 34, 0.836);
+    opacity: 0.9;
+}
+
+aside .top {
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    height: 5rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 1rem;
 }
