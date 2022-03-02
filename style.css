@@ -3,7 +3,7 @@
 /* Root variables */
 
 :root {
-    --color-primary: rgb(24, 24, 24);
+    --color-primary: rgb(111, 226, 220);
     --color-danger: rgb(177, 81, 81);
     --color-success: rgb(90, 182, 151);
     --color-warning: rgb(240, 223, 125);
@@ -11,7 +11,7 @@
     --color-info-dark: rgb(105, 105, 105);
     --color-info-lights: #c0c4c9;
     --color-dark: rgb(34, 22, 43);
-    --color-light: rgb(124, 197, 219);
+    --color-light: rgb(0, 0, 0);
     --color-primary-variant: rgb(84, 140, 173);
     --color-dark-variant: rgb(68, 24, 24);
     --background: black;
@@ -43,7 +43,7 @@ body {
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
-    background: var(--color-primary);
+    background: black;
     user-select: none;
     overflow-x: hidden;
 }
@@ -84,9 +84,7 @@ h5 {
 }
 
 .first {
-    background: linear-gradient(to right, #fff, #6f9655);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: aquamarine;
     font-size: 2rem;
 }
 
@@ -152,8 +150,8 @@ aside .logo {
 }
 
 aside .logo img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
 aside .close {
@@ -162,3 +160,58 @@ aside .close {
 
 
 /*  SIDEBAR    */
+
+aside .sidebar {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-info-dark);
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar .active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sidebar a.active:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active span {
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+aside .sidebar a:hover {
+    color: var(--color-primary);
+}
