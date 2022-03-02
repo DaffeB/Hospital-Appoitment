@@ -21,6 +21,7 @@
     --border-radius-3: 20px;
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem rgb(211, 201, 167);
 }
 
 * {
@@ -65,7 +66,7 @@ a {
 
 h1 {
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 h2 {
@@ -110,7 +111,7 @@ small {
 }
 
 p {
-    color: var(--color-white);
+    color: white;
 }
 
 b {
@@ -239,11 +240,25 @@ main .date {
 main .date input[type="date"] {
     background: white;
     color: black;
+    border-radius: 0.4rem;
 }
 
 main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+    gap: 1rem;
     font-size: 1rem;
+}
+
+main .insights>div {
+    background: rgb(26, 61, 53);
+    padding: var(--card-padding);
+    border-radius: 3rem;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease-out;
+}
+
+main .insights>div:hover {
+    box-shadow: none;
 }
