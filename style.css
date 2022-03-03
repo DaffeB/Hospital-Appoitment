@@ -314,6 +314,16 @@ main .insights .progress .number {
     font-size: 1rem;
     min-width: 400px;
     width: 100%;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.table-name {
+    color: white;
+}
+
+.recent-doctors .table-name {
+    width: 100px;
 }
 
 .recent-doctors thead tr {
@@ -324,10 +334,19 @@ main .insights .progress .number {
 }
 
 .recent-doctors th,
-.recent-doctorstd {
+.recent-doctors td {
     padding: 12px 15x;
+    color: white;
 }
 
 .recent-doctors tbody tr {
     border-bottom: 1px solid gray;
+}
+
+.recent-doctors tbody tr:nth-of-type(even) {
+    background-color: rgb(7, 58, 54);
+}
+
+.recent-doctors tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(39, 199, 172);
 }
