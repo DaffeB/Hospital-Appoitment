@@ -65,9 +65,10 @@ a {
     color: var(--color-info-lights);
 }
 
-h1 {
+.title {
     font-weight: 800;
     font-size: 1.2rem;
+    color: var(--color-info-lights);
 }
 
 h2 {
@@ -244,23 +245,25 @@ main .date input[type="date"] {
     border-radius: 0.4rem;
 }
 
-main .insights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+.insights-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #c0c4c9;
 }
 
-main .insights>div {
+main .insights {
+    cursor: pointer;
     background: rgb(26, 61, 53);
     padding: var(--card-padding);
     border-radius: 3rem;
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    width: 30%;
+    box-shadow: none;
 }
 
-main .insights>div:hover {
-    box-shadow: none;
+main .insights:hover {
+    box-shadow: var(--box-shadow);
 }
 
 main .insights>div .middle {
@@ -310,6 +313,7 @@ main .insights .progress .number {
     margin: 25px 0;
     font-size: 1rem;
     min-width: 400px;
+    width: 100%;
 }
 
 .recent-doctors thead tr {
